@@ -3,8 +3,7 @@ CREATE TABLE core.sd_settings (
 	c_key text NOT NULL,
 	c_value text,
 	c_summary text,
-	c_type text DEFAULT 'TEXT'::text NOT NULL,
-	sn_delete boolean DEFAULT false NOT NULL
+	c_type text DEFAULT 'TEXT'::text NOT NULL
 );
 
 ALTER TABLE core.sd_settings OWNER TO gcheb;
@@ -20,8 +19,6 @@ COMMENT ON COLUMN core.sd_settings.c_value IS 'Значение';
 COMMENT ON COLUMN core.sd_settings.c_summary IS 'Описание настройки';
 
 COMMENT ON COLUMN core.sd_settings.c_type IS 'Тип данных: TEXT, INT, BOOL, DATE';
-
-COMMENT ON COLUMN core.sd_settings.sn_delete IS 'Признак удаления';
 
 --------------------------------------------------------------------------------
 
