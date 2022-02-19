@@ -21,7 +21,7 @@ BEGIN
     --в любых непонятных ситуациях берем 100 дней
     EXCEPTION
         WHEN OTHERS
-        THEN _n_val = 30;
+        THEN _n_val = 100;
     END;
 
 	delete from core.sd_action_log where (d_date  + (_n_val * '1 day'::interval)) < now();

@@ -11,10 +11,11 @@ CREATE TABLE dbo.dd_documents (
 	f_category integer NOT NULL,
 	f_group integer NOT NULL,
 	b_disabled boolean DEFAULT true NOT NULL,
-	dx_created timestamp without time zone DEFAULT now() NOT NULL,
+	d_created_date timestamp without time zone DEFAULT now() NOT NULL,
 	jb_data jsonb,
 	c_image_path text,
-	f_user bigint
+	f_user bigint,
+	d_change_date timestamp without time zone
 );
 
 ALTER TABLE dbo.dd_documents OWNER TO gcheb;
@@ -41,7 +42,7 @@ COMMENT ON COLUMN dbo.dd_documents.f_group IS 'Отрасль';
 
 COMMENT ON COLUMN dbo.dd_documents.b_disabled IS 'Признак предмодерации (если true - то нужна модерация со стороны администратора)';
 
-COMMENT ON COLUMN dbo.dd_documents.dx_created IS 'Дата создания';
+COMMENT ON COLUMN dbo.dd_documents.d_created_date IS 'Дата создания';
 
 COMMENT ON COLUMN dbo.dd_documents.jb_data IS 'Дополнительные данные. Предназначено для создания записи через госуслуги';
 
