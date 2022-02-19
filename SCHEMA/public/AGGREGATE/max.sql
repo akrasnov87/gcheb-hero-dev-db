@@ -3,4 +3,4 @@ CREATE AGGREGATE public.max(uuid) (
 	STYPE = uuid
 );
 
-ALTER AGGREGATE public.max(uuid) OWNER TO hero;
+ALTER AGGREGATE public.max(uuid) OWNER TO gcheb;

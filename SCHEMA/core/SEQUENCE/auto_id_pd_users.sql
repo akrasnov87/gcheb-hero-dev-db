@@ -5,4 +5,4 @@ CREATE SEQUENCE core.auto_id_pd_users
 	NO MINVALUE
 	CACHE 1;
 
-ALTER SEQUENCE core.auto_id_pd_users OWNER TO hero;
+ALTER SEQUENCE core.auto_id_pd_users OWNER TO gcheb;

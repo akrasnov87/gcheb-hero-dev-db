@@ -13,7 +13,7 @@ CREATE TABLE core.pd_users (
 	sn_delete boolean DEFAULT false NOT NULL
 );
 
-ALTER TABLE core.pd_users OWNER TO hero;
+ALTER TABLE core.pd_users OWNER TO gcheb;
 
 COMMENT ON TABLE core.pd_users IS 'Пользователи / Организации';
 

@@ -24,6 +24,6 @@ BEGIN
 END;
 $$;
 
-ALTER FUNCTION core.pf_accesses(n_user_id bigint) OWNER TO hero;
+ALTER FUNCTION core.pf_accesses(n_user_id bigint) OWNER TO gcheb;
 
 COMMENT ON FUNCTION core.pf_accesses(n_user_id bigint) IS 'Системная функция. Получение прав доступа для пользователя. Используется "vaccine-node"JS';

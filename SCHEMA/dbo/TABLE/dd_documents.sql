@@ -10,13 +10,14 @@ CREATE TABLE dbo.dd_documents (
 	c_about text,
 	f_category integer NOT NULL,
 	f_group integer NOT NULL,
-	f_storage uuid,
 	b_disabled boolean DEFAULT true NOT NULL,
 	dx_created timestamp without time zone DEFAULT now() NOT NULL,
-	c_author text
+	jb_data jsonb,
+	c_image_path text,
+	f_user bigint
 );
 
-ALTER TABLE dbo.dd_documents OWNER TO hero;
+ALTER TABLE dbo.dd_documents OWNER TO gcheb;
 
 COMMENT ON COLUMN dbo.dd_documents.c_first_name IS 'Фамилие';
 
@@ -38,13 +39,15 @@ COMMENT ON COLUMN dbo.dd_documents.f_category IS 'Категория';
 
 COMMENT ON COLUMN dbo.dd_documents.f_group IS 'Отрасль';
 
-COMMENT ON COLUMN dbo.dd_documents.f_storage IS 'Ссылка на файл';
-
-COMMENT ON COLUMN dbo.dd_documents.b_disabled IS 'Признак отключения';
+COMMENT ON COLUMN dbo.dd_documents.b_disabled IS 'Признак предмодерации (если true - то нужна модерация со стороны администратора)';
 
 COMMENT ON COLUMN dbo.dd_documents.dx_created IS 'Дата создания';
 
-COMMENT ON COLUMN dbo.dd_documents.c_author IS 'Автор';
+COMMENT ON COLUMN dbo.dd_documents.jb_data IS 'Дополнительные данные. Предназначено для создания записи через госуслуги';
+
+COMMENT ON COLUMN dbo.dd_documents.c_image_path IS 'Путь к изображению, указывается в серверной части';
+
+COMMENT ON COLUMN dbo.dd_documents.f_user IS 'Идентификатор пользователя создавшего запись. Если через публичную часть, то не указывать';
 
 --------------------------------------------------------------------------------
 
@@ -67,3 +70,8 @@ ALTER TABLE dbo.dd_documents
 
 ALTER TABLE dbo.dd_documents
 	ADD CONSTRAINT dd_documents_f_category_fkey FOREIGN KEY (f_category) REFERENCES dbo.cs_categories(id) NOT VALID;
+
+--------------------------------------------------------------------------------
+
+ALTER TABLE dbo.dd_documents
+	ADD CONSTRAINT dd_documents_f_user_fkey FOREIGN KEY (f_user) REFERENCES core.pd_users(id) NOT VALID;

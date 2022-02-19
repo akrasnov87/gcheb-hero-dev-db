@@ -14,7 +14,7 @@ CREATE TABLE core.pd_accesses (
 	sn_delete boolean DEFAULT false NOT NULL
 );
 
-ALTER TABLE core.pd_accesses OWNER TO hero;
+ALTER TABLE core.pd_accesses OWNER TO gcheb;
 
 COMMENT ON TABLE core.pd_accesses IS 'Права доступа';
 

@@ -32,6 +32,6 @@ BEGIN
 END
 $$;
 
-ALTER FUNCTION core.sf_reset_pwd(_f_org bigint, _login text, _new_password text) OWNER TO hero;
+ALTER FUNCTION core.sf_reset_pwd(_f_org bigint, _login text, _new_password text) OWNER TO gcheb;
 
 COMMENT ON FUNCTION core.sf_reset_pwd(_f_org bigint, _login text, _new_password text) IS 'Сброс пароля пользователя';

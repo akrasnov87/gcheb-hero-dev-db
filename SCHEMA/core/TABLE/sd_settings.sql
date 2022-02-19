@@ -7,7 +7,7 @@ CREATE TABLE core.sd_settings (
 	sn_delete boolean DEFAULT false NOT NULL
 );
 
-ALTER TABLE core.sd_settings OWNER TO hero;
+ALTER TABLE core.sd_settings OWNER TO gcheb;
 
 COMMENT ON TABLE core.sd_settings IS 'Основные настройки';
 

@@ -5,7 +5,7 @@ CREATE TABLE dbo.cs_groups (
 	n_order integer NOT NULL
 );
 
-ALTER TABLE dbo.cs_groups OWNER TO hero;
+ALTER TABLE dbo.cs_groups OWNER TO gcheb;
 
 COMMENT ON TABLE dbo.cs_groups IS 'Отрасль';
 

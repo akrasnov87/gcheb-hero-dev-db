@@ -23,6 +23,6 @@ BEGIN
 END
 $$;
 
-ALTER FUNCTION core.sf_verify_user(_login text, _password text) OWNER TO hero;
+ALTER FUNCTION core.sf_verify_user(_login text, _password text) OWNER TO gcheb;
 
 COMMENT ON FUNCTION core.sf_verify_user(_login text, _password text) IS 'Проверка пользователя на авторизацию';

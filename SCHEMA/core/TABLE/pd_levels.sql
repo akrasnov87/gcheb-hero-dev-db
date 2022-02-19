@@ -6,7 +6,7 @@ CREATE TABLE core.pd_levels (
 	c_description text
 );
 
-ALTER TABLE core.pd_levels OWNER TO hero;
+ALTER TABLE core.pd_levels OWNER TO gcheb;
 
 COMMENT ON TABLE core.pd_levels IS 'Уровени';
 

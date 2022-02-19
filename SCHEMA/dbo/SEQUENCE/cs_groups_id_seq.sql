@@ -6,7 +6,7 @@ CREATE SEQUENCE dbo.cs_groups_id_seq
 	NO MINVALUE
 	CACHE 1;
 
-ALTER SEQUENCE dbo.cs_groups_id_seq OWNER TO hero;
+ALTER SEQUENCE dbo.cs_groups_id_seq OWNER TO gcheb;
 
 ALTER SEQUENCE dbo.cs_groups_id_seq
 	OWNED BY dbo.cs_groups.id;

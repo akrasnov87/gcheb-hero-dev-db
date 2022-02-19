@@ -12,6 +12,6 @@ BEGIN
 END
 $$;
 
-ALTER FUNCTION core.sf_del_user(_id bigint) OWNER TO hero;
+ALTER FUNCTION core.sf_del_user(_id bigint) OWNER TO gcheb;
 
 COMMENT ON FUNCTION core.sf_del_user(_id bigint) IS 'Удаление пользователя';

@@ -15,6 +15,6 @@ BEGIN
 END;
 $$;
 
-ALTER FUNCTION core.pf_levels(_f_parent uuid) OWNER TO hero;
+ALTER FUNCTION core.pf_levels(_f_parent uuid) OWNER TO gcheb;
 
 COMMENT ON FUNCTION core.pf_levels(_f_parent uuid) IS 'Получение информации о уровнях';

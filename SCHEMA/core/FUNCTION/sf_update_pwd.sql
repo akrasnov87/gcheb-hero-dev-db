@@ -40,6 +40,6 @@ BEGIN
 END
 $$;
 
-ALTER FUNCTION core.sf_update_pwd(_login text, _password text, _new_password text) OWNER TO hero;
+ALTER FUNCTION core.sf_update_pwd(_login text, _password text, _new_password text) OWNER TO gcheb;
 
 COMMENT ON FUNCTION core.sf_update_pwd(_login text, _password text, _new_password text) IS 'Замена пароля пользователя';

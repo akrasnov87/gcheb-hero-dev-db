@@ -11,6 +11,6 @@ BEGIN
 END
 $$;
 
-ALTER FUNCTION core.sf_write_log(_c_message text, _c_data text, _n_level integer) OWNER TO hero;
+ALTER FUNCTION core.sf_write_log(_c_message text, _c_data text, _n_level integer) OWNER TO gcheb;
 
 COMMENT ON FUNCTION core.sf_write_log(_c_message text, _c_data text, _n_level integer) IS 'Запись логов';

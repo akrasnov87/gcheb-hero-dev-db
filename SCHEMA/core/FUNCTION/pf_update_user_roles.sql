@@ -19,6 +19,6 @@ BEGIN
 END
 $$;
 
-ALTER FUNCTION core.pf_update_user_roles(_user_id bigint, _claims json) OWNER TO hero;
+ALTER FUNCTION core.pf_update_user_roles(_user_id bigint, _claims json) OWNER TO gcheb;
 
 COMMENT ON FUNCTION core.pf_update_user_roles(_user_id bigint, _claims json) IS 'Обновление ролей у пользователя';

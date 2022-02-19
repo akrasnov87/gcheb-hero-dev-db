@@ -23,6 +23,6 @@ BEGIN
 END;
 $$;
 
-ALTER FUNCTION core.sf_users(_f_user bigint) OWNER TO hero;
+ALTER FUNCTION core.sf_users(_f_user bigint) OWNER TO gcheb;
 
 COMMENT ON FUNCTION core.sf_users(_f_user bigint) IS 'Получение информации о пользователе';

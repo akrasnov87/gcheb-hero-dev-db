@@ -27,6 +27,6 @@ EXCEPTION
 END;
 $$;
 
-ALTER FUNCTION core.sft_log_action() OWNER TO hero;
+ALTER FUNCTION core.sft_log_action() OWNER TO gcheb;
 
 COMMENT ON FUNCTION core.sft_log_action() IS 'Триггер. Процедура логирования действия пользователя';

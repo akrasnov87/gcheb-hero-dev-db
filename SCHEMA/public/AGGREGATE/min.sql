@@ -3,4 +3,4 @@ CREATE AGGREGATE public.min(uuid) (
 	STYPE = uuid
 );
 
-ALTER AGGREGATE public.min(uuid) OWNER TO hero;
+ALTER AGGREGATE public.min(uuid) OWNER TO gcheb;

@@ -53,6 +53,6 @@ BEGIN
 END;
 $$;
 
-ALTER FUNCTION core.sf_level_users(_f_level uuid) OWNER TO hero;
+ALTER FUNCTION core.sf_level_users(_f_level uuid) OWNER TO gcheb;
 
 COMMENT ON FUNCTION core.sf_level_users(_f_level uuid) IS 'Получение информации о пользователях на уровне';

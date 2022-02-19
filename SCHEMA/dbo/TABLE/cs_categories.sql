@@ -5,7 +5,7 @@ CREATE TABLE dbo.cs_categories (
 	n_order integer NOT NULL
 );
 
-ALTER TABLE dbo.cs_categories OWNER TO hero;
+ALTER TABLE dbo.cs_categories OWNER TO gcheb;
 
 COMMENT ON TABLE dbo.cs_categories IS 'Отрасль';
 

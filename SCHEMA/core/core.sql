@@ -1,3 +1,3 @@
 CREATE SCHEMA core;
 
-ALTER SCHEMA core OWNER TO hero;
+ALTER SCHEMA core OWNER TO gcheb;

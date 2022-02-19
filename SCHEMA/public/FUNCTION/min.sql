@@ -10,4 +10,4 @@ BEGIN
 END;
 $_$;
 
-ALTER FUNCTION public.min(uuid, uuid) OWNER TO hero;
+ALTER FUNCTION public.min(uuid, uuid) OWNER TO gcheb;

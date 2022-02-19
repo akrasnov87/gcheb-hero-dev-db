@@ -9,7 +9,7 @@ CREATE TABLE core.sd_action_log (
 	dx_created timestamp without time zone DEFAULT now() NOT NULL
 );
 
-ALTER TABLE core.sd_action_log OWNER TO hero;
+ALTER TABLE core.sd_action_log OWNER TO gcheb;
 
 COMMENT ON TABLE core.sd_action_log IS 'Логирование действий пользователей с данными. Полная информация';
 

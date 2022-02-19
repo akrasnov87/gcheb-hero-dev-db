@@ -20,6 +20,6 @@ BEGIN
 END
 $$;
 
-ALTER FUNCTION core.sf_create_user(_login text, _password text, _claims text) OWNER TO hero;
+ALTER FUNCTION core.sf_create_user(_login text, _password text, _claims text) OWNER TO gcheb;
 
 COMMENT ON FUNCTION core.sf_create_user(_login text, _password text, _claims text) IS 'Создание пользователя с определенными ролями';

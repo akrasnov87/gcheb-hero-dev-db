@@ -5,7 +5,7 @@ CREATE TABLE core.pd_userinroles (
 	sn_delete boolean DEFAULT false
 );
 
-ALTER TABLE core.pd_userinroles OWNER TO hero;
+ALTER TABLE core.pd_userinroles OWNER TO gcheb;
 
 COMMENT ON TABLE core.pd_userinroles IS 'Пользователи в ролях';
 

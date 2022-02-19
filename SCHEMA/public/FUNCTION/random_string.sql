@@ -16,4 +16,4 @@ begin
 end;
 $$;
 
-ALTER FUNCTION public.random_string(length integer) OWNER TO hero;
+ALTER FUNCTION public.random_string(length integer) OWNER TO gcheb;

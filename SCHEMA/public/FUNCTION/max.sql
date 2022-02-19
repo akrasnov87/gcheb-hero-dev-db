@@ -10,4 +10,4 @@ BEGIN
 END;
 $_$;
 
-ALTER FUNCTION public.max(uuid, uuid) OWNER TO hero;
+ALTER FUNCTION public.max(uuid, uuid) OWNER TO gcheb;
