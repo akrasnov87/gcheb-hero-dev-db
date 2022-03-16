@@ -15,7 +15,9 @@ CREATE TABLE dbo.dd_documents (
 	jb_data jsonb,
 	c_image_path text,
 	f_user bigint,
-	d_change_date timestamp without time zone
+	d_change_date timestamp without time zone,
+	c_tag text,
+	c_notice text
 );
 
 ALTER TABLE dbo.dd_documents OWNER TO gcheb;
@@ -49,6 +51,10 @@ COMMENT ON COLUMN dbo.dd_documents.jb_data IS 'Дополнительные да
 COMMENT ON COLUMN dbo.dd_documents.c_image_path IS 'Путь к изображению, указывается в серверной части';
 
 COMMENT ON COLUMN dbo.dd_documents.f_user IS 'Идентификатор пользователя создавшего запись. Если через публичную часть, то не указывать';
+
+COMMENT ON COLUMN dbo.dd_documents.c_tag IS 'Цветовая метка';
+
+COMMENT ON COLUMN dbo.dd_documents.c_notice IS 'Примечание';
 
 --------------------------------------------------------------------------------
 
